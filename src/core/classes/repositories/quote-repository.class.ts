@@ -1,6 +1,4 @@
-import IQuote, {
-  IBaseQuote,
-} from '@wb-types/core/interfaces/models/quote.interface'
+import IQuote, { IBaseQuote } from 'src/core/interfaces/models/quote.interface'
 
 export default abstract class QuoteRepository {
   /**

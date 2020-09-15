@@ -1,8 +1,8 @@
 import { IPendingQuote } from '../interactors/quote-watch-interactor.class'
 import ISubmissionStatus, {
   IBaseSubmissionStatus,
-} from '@wb-types/core/interfaces/models/submission-status.interface'
-import ISubmissionVerdict from '@wb-types/core/interfaces/models/submission-verdict.interface'
+} from 'src/core/interfaces/models/submission-status.interface'
+import ISubmissionVerdict from 'src/core/interfaces/models/submission-verdict.interface'
 
 export default abstract class SubmissionRepository {
   abstract getPendingQuotes(serverId: string): Promise<IPendingQuote[]>

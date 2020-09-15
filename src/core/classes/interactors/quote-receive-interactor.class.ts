@@ -1,5 +1,5 @@
-import IQuote from '@wb-types/core/interfaces/models/quote.interface'
-import IReceive from '@wb-types/core/interfaces/models/receive.interface'
+import IQuote from 'src/core/interfaces/models/quote.interface'
+import IReceive from 'src/core/interfaces/models/receive.interface'
 
 export default abstract class QuoteReceiveInteractor {
   abstract receiveQuote(input: IReceiveQuoteInput): Promise<IRecieveQuoteOutput>

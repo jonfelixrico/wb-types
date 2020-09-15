@@ -1,6 +1,6 @@
-import { IBaseQuote } from '@wb-types/core/interfaces/models/quote.interface'
+import { IBaseQuote } from 'src/core/interfaces/models/quote.interface'
 import { IPendingQuote } from './quote-watch-interactor.class'
-import IApprovalRequirements from '@wb-types/core/interfaces/models/approval-requirements.interface'
+import IApprovalRequirements from 'src/core/interfaces/models/approval-requirements.interface'
 
 export default abstract class QuoteSubmitInteractor {
   abstract submitQuote(input: ISubmitQuoteInput): Promise<IPendingQuote>
