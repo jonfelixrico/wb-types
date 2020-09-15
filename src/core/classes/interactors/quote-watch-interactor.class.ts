@@ -1,5 +1,5 @@
-import IQuote from 'src/core/interfaces/models/quote.interface'
-import ISubmissionStatus from 'src/core/interfaces/models/submission-status.interface'
+import IQuote from '@wb-types/core/interfaces/models/quote.interface'
+import ISubmissionStatus from '@wb-types/core/interfaces/models/submission-status.interface'
 
 export abstract class QuoteWatchInteractor {
   /**

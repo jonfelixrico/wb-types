@@ -1,6 +1,6 @@
 import IReceive, {
   IBaseReceive,
-} from 'src/core/interfaces/models/receive.interface'
+} from '@wb-types/core/interfaces/models/receive.interface'
 
 export default abstract class ReceiveRepository {
   abstract createReceive(
