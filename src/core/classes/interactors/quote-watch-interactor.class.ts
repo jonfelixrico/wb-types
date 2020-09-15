@@ -1,5 +1,5 @@
-import IQuote from "src/core/interfaces/models/quote.interface";
-import ISubmissionStatus from "src/core/interfaces/models/submission-status.interface";
+import IQuote from 'src/core/interfaces/models/quote.interface'
+import ISubmissionStatus from 'src/core/interfaces/models/submission-status.interface'
 
 export abstract class QuoteWatchInteractor {
   /**
@@ -8,22 +8,22 @@ export abstract class QuoteWatchInteractor {
    * thrown if there are no associated messages found.
    * @param messageId
    */
-  abstract approveByMessageId(messageId: string): Promise<IPendingQuote>;
+  abstract approveByMessageId(messageId: string): Promise<IPendingQuote>
 
   /**
    *
    * @param serverId
    */
-  abstract getPendingQuotes(serverId: string): Promise<IPendingQuote[]>;
+  abstract getPendingQuotes(serverId: string): Promise<IPendingQuote[]>
 
   /**
    *
    * @param messageId
    */
-  abstract flagAsLost(messageId: string): Promise<IPendingQuote>;
+  abstract flagAsLost(messageId: string): Promise<IPendingQuote>
 }
 
 export interface IPendingQuote {
-  quote: IQuote;
-  submissionStatus: ISubmissionStatus;
+  quote: IQuote
+  submissionStatus: ISubmissionStatus
 }
